@@ -1,4 +1,4 @@
-const luckyNum = Math.floor(Math.random() * 50);
+
 const greetings = [
     "Hey hey, superstar!",               // casual/cool
     "Greetings, Earthling. 👽",          // silly/funny
@@ -54,6 +54,7 @@ const quotes = [
     "Not all those who wander are lost — some are simply exploring truth."
 ];
 const randomMessageGenerator = () => {
+    const luckyNum = Math.floor(Math.random() * 50) + 1;
     const finalMessage = `${greetings[Math.floor(Math.random() * greetings.length)]}, Your lucky number is: ${luckyNum}, ${quotes[Math.floor(Math.random() * quotes.length)]}`
     return finalMessage;
 }
